@@ -23,8 +23,10 @@ public class ExceptionAssignment {
         } catch (ArithmeticException e) {
             // Catch ArithmeticException and display message
             // to let the user know about the division of zero
-            System.out.print("Division by zero. Try again next time");
+            System.out.print("Division by zero. Try again next time\n");
+        } finally {
+            // This message will be displayed whether or not an exception is raised and caught
+            System.out.println("finally block will execute.");
         }
-
     }
 }
